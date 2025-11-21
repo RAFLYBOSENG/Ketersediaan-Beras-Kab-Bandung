@@ -1,5 +1,6 @@
 [build]
-builder = "NIXPACKS"
+builder = "DOCKERFILE"
+# Tidak perlu buildCommand di sini, karena sudah diatur di Dockerfile
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
