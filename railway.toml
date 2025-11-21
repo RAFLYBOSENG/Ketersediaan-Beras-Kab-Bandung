@@ -9,5 +9,5 @@ healthcheckTimeout = 100
 restartPolicyType = "ON_FAILURE"
 
 [envs]
-PYTHON_VERSION = "3.10.12"
-NIXPACKS_PYTHON_VERSION = "3.10.12" 
+PYTHON_VERSION = "3.11.0"
+NIXPACKS_PYTHON_VERSION = "3.11.0" 
