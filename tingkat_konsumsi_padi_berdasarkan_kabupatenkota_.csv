@@ -1,0 +1,190 @@
+id , kode_provinsi, nama_provinsi, kode_kabupaten_kota, nama_kabupaten_kota    , total , satuan      , tahun
+1  , 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 117.4 , KG/KAP/TAHUN, 2018
+2  , 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 129.5 , KG/KAP/TAHUN, 2018
+3  , 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 127.3 , KG/KAP/TAHUN, 2018
+4  , 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 114.1 , KG/KAP/TAHUN, 2018
+5  , 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 120.6 , KG/KAP/TAHUN, 2018
+6  , 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 121.5 , KG/KAP/TAHUN, 2018
+7  , 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 127.3 , KG/KAP/TAHUN, 2018
+8  , 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 116.3 , KG/KAP/TAHUN, 2018
+9  , 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 137.1 , KG/KAP/TAHUN, 2018
+10 , 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 126.2 , KG/KAP/TAHUN, 2018
+11 , 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 121.3 , KG/KAP/TAHUN, 2018
+12 , 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 141.3 , KG/KAP/TAHUN, 2018
+13 , 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 130.7 , KG/KAP/TAHUN, 2018
+14 , 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 126.4 , KG/KAP/TAHUN, 2018
+15 , 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 144.8 , KG/KAP/TAHUN, 2018
+16 , 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 121.2 , KG/KAP/TAHUN, 2018
+17 , 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 116.1 , KG/KAP/TAHUN, 2018
+18 , 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 121.2 , KG/KAP/TAHUN, 2018
+19 , 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 112.9 , KG/KAP/TAHUN, 2018
+20 , 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 117.6 , KG/KAP/TAHUN, 2018
+21 , 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 108.5 , KG/KAP/TAHUN, 2018
+22 , 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 109.0 , KG/KAP/TAHUN, 2018
+23 , 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 114.7 , KG/KAP/TAHUN, 2018
+24 , 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 110.4 , KG/KAP/TAHUN, 2018
+25 , 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 110.0 , KG/KAP/TAHUN, 2018
+26 , 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 116.1 , KG/KAP/TAHUN, 2018
+27 , 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 117.5 , KG/KAP/TAHUN, 2018
+28 , 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 116.7 , KG/KAP/TAHUN, 2019
+29 , 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 126.3 , KG/KAP/TAHUN, 2019
+30 , 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 121.7 , KG/KAP/TAHUN, 2019
+31 , 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 112.1 , KG/KAP/TAHUN, 2019
+32 , 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 113.9 , KG/KAP/TAHUN, 2019
+33 , 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 118.0 , KG/KAP/TAHUN, 2019
+34 , 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 122.4 , KG/KAP/TAHUN, 2019
+35 , 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 108.1 , KG/KAP/TAHUN, 2019
+36 , 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 139.1 , KG/KAP/TAHUN, 2019
+37 , 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 122.2 , KG/KAP/TAHUN, 2019
+38 , 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 119.7 , KG/KAP/TAHUN, 2019
+39 , 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 144.5 , KG/KAP/TAHUN, 2019
+40 , 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 127.3 , KG/KAP/TAHUN, 2019
+41 , 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 124.4 , KG/KAP/TAHUN, 2019
+42 , 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 133.0 , KG/KAP/TAHUN, 2019
+43 , 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 119.7 , KG/KAP/TAHUN, 2019
+44 , 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 111.0 , KG/KAP/TAHUN, 2019
+45 , 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 123.7 , KG/KAP/TAHUN, 2019
+46 , 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 112.0 , KG/KAP/TAHUN, 2019
+47 , 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 114.5 , KG/KAP/TAHUN, 2019
+48 , 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 104.3 , KG/KAP/TAHUN, 2019
+49 , 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 117.5 , KG/KAP/TAHUN, 2019
+50 , 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 114.4 , KG/KAP/TAHUN, 2019
+51 , 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 105.6 , KG/KAP/TAHUN, 2019
+52 , 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 103.1 , KG/KAP/TAHUN, 2019
+53 , 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 121.9 , KG/KAP/TAHUN, 2019
+54 , 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 114.0 , KG/KAP/TAHUN, 2019
+55 , 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 113.2 , KG/KAP/TAHUN, 2020
+56 , 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 133.7 , KG/KAP/TAHUN, 2020
+57 , 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 119.6 , KG/KAP/TAHUN, 2020
+58 , 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 107.5 , KG/KAP/TAHUN, 2020
+59 , 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 116.5 , KG/KAP/TAHUN, 2020
+60 , 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 115.6 , KG/KAP/TAHUN, 2020
+61 , 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 121.8 , KG/KAP/TAHUN, 2020
+62 , 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 113.4 , KG/KAP/TAHUN, 2020
+63 , 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 130.9 , KG/KAP/TAHUN, 2020
+64 , 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 126.1 , KG/KAP/TAHUN, 2020
+65 , 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 119.6 , KG/KAP/TAHUN, 2020
+66 , 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 140.6 , KG/KAP/TAHUN, 2020
+67 , 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 130.3 , KG/KAP/TAHUN, 2020
+68 , 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 122.0 , KG/KAP/TAHUN, 2020
+69 , 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 126.2 , KG/KAP/TAHUN, 2020
+70 , 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 122.8 , KG/KAP/TAHUN, 2020
+71 , 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 108.3 , KG/KAP/TAHUN, 2020
+72 , 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 122.3 , KG/KAP/TAHUN, 2020
+73 , 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 108.5 , KG/KAP/TAHUN, 2020
+74 , 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 115.2 , KG/KAP/TAHUN, 2020
+75 , 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 109.6 , KG/KAP/TAHUN, 2020
+76 , 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 117.8 , KG/KAP/TAHUN, 2020
+77 , 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 116.5 , KG/KAP/TAHUN, 2020
+78 , 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 109.5 , KG/KAP/TAHUN, 2020
+79 , 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 102.4 , KG/KAP/TAHUN, 2020
+80 , 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 128.7 , KG/KAP/TAHUN, 2020
+81 , 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 122.6 , KG/KAP/TAHUN, 2020
+82 , 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 113.6 , KG/KAP/TAHUN, 2021
+83 , 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 132.2 , KG/KAP/TAHUN, 2021
+84 , 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 131.0 , KG/KAP/TAHUN, 2021
+85 , 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 110.4 , KG/KAP/TAHUN, 2021
+86 , 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 112.9 , KG/KAP/TAHUN, 2021
+87 , 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 118.0 , KG/KAP/TAHUN, 2021
+88 , 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 124.1 , KG/KAP/TAHUN, 2021
+89 , 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 121.7 , KG/KAP/TAHUN, 2021
+90 , 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 126.5 , KG/KAP/TAHUN, 2021
+91 , 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 120.2 , KG/KAP/TAHUN, 2021
+92 , 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 123.1 , KG/KAP/TAHUN, 2021
+93 , 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 129.3 , KG/KAP/TAHUN, 2021
+94 , 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 124.1 , KG/KAP/TAHUN, 2021
+95 , 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 123.4 , KG/KAP/TAHUN, 2021
+96 , 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 125.6 , KG/KAP/TAHUN, 2021
+97 , 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 119.5 , KG/KAP/TAHUN, 2021
+98 , 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 111.2 , KG/KAP/TAHUN, 2021
+99 , 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 123.4 , KG/KAP/TAHUN, 2021
+100, 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 111.1 , KG/KAP/TAHUN, 2021
+101, 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 109.2 , KG/KAP/TAHUN, 2021
+102, 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 105.4 , KG/KAP/TAHUN, 2021
+103, 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 108.1 , KG/KAP/TAHUN, 2021
+104, 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 112.8 , KG/KAP/TAHUN, 2021
+105, 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 107.5 , KG/KAP/TAHUN, 2021
+106, 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 95.9  , KG/KAP/TAHUN, 2021
+107, 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 124.4 , KG/KAP/TAHUN, 2021
+108, 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 123.3 , KG/KAP/TAHUN, 2021
+109, 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 114.5 , KG/KAP/TAHUN, 2022
+110, 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 129.7 , KG/KAP/TAHUN, 2022
+111, 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 125.7 , KG/KAP/TAHUN, 2022
+112, 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 102.3 , KG/KAP/TAHUN, 2022
+113, 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 110.8 , KG/KAP/TAHUN, 2022
+114, 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 122.3 , KG/KAP/TAHUN, 2022
+115, 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 128.4 , KG/KAP/TAHUN, 2022
+116, 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 105.9 , KG/KAP/TAHUN, 2022
+117, 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 119.1 , KG/KAP/TAHUN, 2022
+118, 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 109.1 , KG/KAP/TAHUN, 2022
+119, 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 120.1 , KG/KAP/TAHUN, 2022
+120, 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 128.8 , KG/KAP/TAHUN, 2022
+121, 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 117.0 , KG/KAP/TAHUN, 2022
+122, 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 120.1 , KG/KAP/TAHUN, 2022
+123, 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 126.6 , KG/KAP/TAHUN, 2022
+124, 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 115.9 , KG/KAP/TAHUN, 2022
+125, 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 112.5 , KG/KAP/TAHUN, 2022
+126, 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 122.7 , KG/KAP/TAHUN, 2022
+127, 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 108.3 , KG/KAP/TAHUN, 2022
+128, 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 106.9 , KG/KAP/TAHUN, 2022
+129, 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 98.0  , KG/KAP/TAHUN, 2022
+130, 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 106.8 , KG/KAP/TAHUN, 2022
+131, 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 99.5  , KG/KAP/TAHUN, 2022
+132, 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 106.7 , KG/KAP/TAHUN, 2022
+133, 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 99.7  , KG/KAP/TAHUN, 2022
+134, 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 115.9 , KG/KAP/TAHUN, 2022
+135, 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 122.3 , KG/KAP/TAHUN, 2022
+136, 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 108.5 , KG/KAP/TAHUN, 2023
+137, 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 131.0 , KG/KAP/TAHUN, 2023
+138, 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 130.8 , KG/KAP/TAHUN, 2023
+139, 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 108.5 , KG/KAP/TAHUN, 2023
+140, 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 113.5 , KG/KAP/TAHUN, 2023
+141, 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 114.7 , KG/KAP/TAHUN, 2023
+142, 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 123.8 , KG/KAP/TAHUN, 2023
+143, 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 106.5 , KG/KAP/TAHUN, 2023
+144, 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 121.9 , KG/KAP/TAHUN, 2023
+145, 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 115.5 , KG/KAP/TAHUN, 2023
+146, 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 120.2 , KG/KAP/TAHUN, 2023
+147, 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 126.4 , KG/KAP/TAHUN, 2023
+148, 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 119.5 , KG/KAP/TAHUN, 2023
+149, 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 127.6 , KG/KAP/TAHUN, 2023
+150, 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 131.1 , KG/KAP/TAHUN, 2023
+151, 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 112.6 , KG/KAP/TAHUN, 2023
+152, 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 108.5 , KG/KAP/TAHUN, 2023
+153, 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 125.4 , KG/KAP/TAHUN, 2023
+154, 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 109.8 , KG/KAP/TAHUN, 2023
+155, 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 112.8 , KG/KAP/TAHUN, 2023
+156, 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 102.6 , KG/KAP/TAHUN, 2023
+157, 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 109.0 , KG/KAP/TAHUN, 2023
+158, 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 106.8 , KG/KAP/TAHUN, 2023
+159, 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 102.4 , KG/KAP/TAHUN, 2023
+160, 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 99.1  , KG/KAP/TAHUN, 2023
+161, 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 129.8 , KG/KAP/TAHUN, 2023
+162, 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 124.0 , KG/KAP/TAHUN, 2023
+163, 32           , JAWA BARAT   , 3201               , KABUPATEN BOGOR        , 107.24, KG/KAP/TAHUN, 2024
+164, 32           , JAWA BARAT   , 3202               , KABUPATEN SUKABUMI     , 127.75, KG/KAP/TAHUN, 2024
+165, 32           , JAWA BARAT   , 3203               , KABUPATEN CIANJUR      , 124.64, KG/KAP/TAHUN, 2024
+166, 32           , JAWA BARAT   , 3204               , KABUPATEN BANDUNG      , 101.07, KG/KAP/TAHUN, 2024
+167, 32           , JAWA BARAT   , 3205               , KABUPATEN GARUT        , 112.63, KG/KAP/TAHUN, 2024
+168, 32           , JAWA BARAT   , 3206               , KABUPATEN TASIKMALAYA  , 113.21, KG/KAP/TAHUN, 2024
+169, 32           , JAWA BARAT   , 3207               , KABUPATEN CIAMIS       , 117.09, KG/KAP/TAHUN, 2024
+170, 32           , JAWA BARAT   , 3208               , KABUPATEN KUNINGAN     , 106.31, KG/KAP/TAHUN, 2024
+171, 32           , JAWA BARAT   , 3209               , KABUPATEN CIREBON      , 119.98, KG/KAP/TAHUN, 2024
+172, 32           , JAWA BARAT   , 3210               , KABUPATEN MAJLENGKA    , 112.04, KG/KAP/TAHUN, 2024
+173, 32           , JAWA BARAT   , 3211               , KABUPATEN SUMEDANG     , 118.92, KG/KAP/TAHUN, 2024
+174, 32           , JAWA BARAT   , 3212               , KABUPATEN INDRAMAYU    , 125.85, KG/KAP/TAHUN, 2024
+175, 32           , JAWA BARAT   , 3213               , KABUPATEN SUBANG       , 115.55, KG/KAP/TAHUN, 2024
+176, 32           , JAWA BARAT   , 3214               , KABUPATEN PURWAKARTA   , 118.76, KG/KAP/TAHUN, 2024
+177, 32           , JAWA BARAT   , 3215               , KABUPATEN KARAWANG     , 123.64, KG/KAP/TAHUN, 2024
+178, 32           , JAWA BARAT   , 3216               , KABUPATEN BEKASI       , 113.97, KG/KAP/TAHUN, 2024
+179, 32           , JAWA BARAT   , 3217               , KABUPATEN BANDUNG BARAT, 106.04, KG/KAP/TAHUN, 2024
+180, 32           , JAWA BARAT   , 3218               , KABUPATEN PANGANDARAN  , 123.64, KG/KAP/TAHUN, 2024
+181, 32           , JAWA BARAT   , 3271               , KOTA BOGOR             , 101.97, KG/KAP/TAHUN, 2024
+182, 32           , JAWA BARAT   , 3272               , KOTA SUKABUMI          , 109.9 , KG/KAP/TAHUN, 2024
+183, 32           , JAWA BARAT   , 3273               , KOTA BANDUNG           , 95.9  , KG/KAP/TAHUN, 2024
+184, 32           , JAWA BARAT   , 3274               , KOTA CIREBON           , 105.39, KG/KAP/TAHUN, 2024
+185, 32           , JAWA BARAT   , 3275               , KOTA BEKASI            , 108.24, KG/KAP/TAHUN, 2024
+186, 32           , JAWA BARAT   , 3276               , KOTA DEPOK             , 103.09, KG/KAP/TAHUN, 2024
+187, 32           , JAWA BARAT   , 3277               , KOTA CIMAHI            , 93.78 , KG/KAP/TAHUN, 2024
+188, 32           , JAWA BARAT   , 3278               , KOTA TASIKMALAYA       , 123.78, KG/KAP/TAHUN, 2024
+189, 32           , JAWA BARAT   , 3279               , KOTA BANJAR            , 127.2 , KG/KAP/TAHUN, 2024

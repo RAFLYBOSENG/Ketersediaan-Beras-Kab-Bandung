@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistem Dinamik Beras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="relative isolate overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-emerald-900/40 via-slate-950 to-slate-950 pointer-events-none"></div>
+      <div class="absolute -top-32 -right-32 w-96 h-96 bg-emerald-500/30 blur-[140px] rounded-full pointer-events-none"></div>
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-lime-400/20 blur-[140px] rounded-full pointer-events-none"></div>
+
+      <header class="relative z-10 border-b border-white/10 bg-slate-950/60 backdrop-blur px-6 py-4">
+        <div class="mx-auto flex max-w-6xl items-center justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-emerald-300/70">Kabupaten Bandung</p>
+            <h1 class="text-2xl font-semibold">Sistem Dinamik Ketersediaan Beras</h1>
+          </div>
+          <a
+            href="#visualisasi"
+            class="inline-flex items-center gap-2 rounded-full bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300 ring-1 ring-emerald-300/40 transition hover:bg-emerald-400/20"
+          >
+            <span>Lihat Visualisasi</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="relative z-10 px-6 pb-16 pt-10">
+        <section class="mx-auto flex max-w-6xl flex-col gap-6 lg:flex-row">
+          <div class="flex-1 rounded-3xl border border-white/5 bg-white/5 p-8 shadow-2xl shadow-emerald-900/30 backdrop-blur">
+            <p class="text-sm text-emerald-200">Simulasi Multi-Skenario</p>
+            <h2 class="mt-3 text-4xl font-semibold leading-tight text-white">
+              Pantau stok beras & laju produksi secara real-time
+            </h2>
+            <p class="mt-4 text-base text-slate-300">
+              Data terintegrasi dari simulasi dinamika sistem menampilkan stok ketersediaan serta keseimbangan produksi dan konsumsi untuk pengambilan keputusan yang lebih presisi.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm">
+                <p class="text-slate-300">Rentang Tahun</p>
+                <p id="statRange" class="mt-1 text-2xl font-semibold text-white">-</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm">
+                <p class="text-slate-300">Status</p>
+                <p id="statStatus" class="mt-1 text-emerald-300">Memuat data...</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 rounded-3xl border border-white/5 bg-gradient-to-br from-emerald-400/10 to-lime-500/10 p-8 shadow-2xl shadow-emerald-900/30 backdrop-blur">
+            <div class="flex items-center gap-3 text-emerald-200">
+              <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-400/15">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2 4 4L21 4" />
+                </svg>
+              </div>
+              <p class="text-sm font-semibold uppercase tracking-[0.35em]">Insight Cepat</p>
+            </div>
+            <div class="mt-6 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-2xl bg-white/10 p-5 shadow-inner shadow-emerald-900/20">
+                <p class="text-sm text-slate-200">Stok Beras Terkini</p>
+                <p id="statStok" class="mt-3 text-3xl font-semibold text-white">-</p>
+                <p id="statTrend" class="text-xs uppercase tracking-wider text-emerald-300">Analisis tren ...</p>
+              </div>
+              <div class="rounded-2xl bg-white/10 p-5 shadow-inner shadow-emerald-900/20">
+                <p class="text-sm text-slate-200">Selisih Produksi vs Konsumsi</p>
+                <p id="statSelisih" class="mt-3 text-3xl font-semibold text-white">-</p>
+                <p id="statLabelSelisih" class="text-xs uppercase tracking-wider text-slate-200">Data diproses ...</p>
+              </div>
+            </div>
+            <div class="mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200">
+              <p class="font-medium text-white">Digest Terbaru</p>
+              <p id="digest" class="mt-1 text-slate-300">Menunggu data simulasi masuk...</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="visualisasi" class="mx-auto mt-12 max-w-6xl space-y-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold text-white">Panel Visualisasi</h3>
+            <span id="loaderState" class="inline-flex items-center gap-2 text-sm text-slate-300">
+              <span class="h-2 w-2 animate-ping rounded-full bg-emerald-300"></span>
+              Sinkronisasi data...
+            </span>
+          </div>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div class="lg:col-span-2 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/20">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-300">Level Persediaan</p>
+                  <h4 class="text-lg font-semibold text-white">Stok Beras</h4>
+                </div>
+                <button
+                  id="btnRefresh"
+                  class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:bg-white/10"
+                >
+                  Refresh
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 4.5v6h6M19.5 19.5v-6h-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-4 h-[320px]">
+                <canvas id="chartStok"></canvas>
+              </div>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 to-slate-900/30 p-5 shadow-2xl shadow-black/20">
+              <p class="text-sm text-slate-300">Momentum Sistem</p>
+              <h4 class="text-lg font-semibold text-white">Diagnostik Singkat</h4>
+              <dl class="mt-6 space-y-5 text-sm">
+                <div>
+                  <dt class="text-slate-400">Perubahan Stok</dt>
+                  <dd id="diagDelta" class="text-lg font-semibold text-white">-</dd>
+                </div>
+                <div>
+                  <dt class="text-slate-400">Rata-rata Produksi</dt>
+                  <dd id="diagProd" class="text-lg font-semibold text-white">-</dd>
+                </div>
+                <div>
+                  <dt class="text-slate-400">Rata-rata Konsumsi</dt>
+                  <dd id="diagKons" class="text-lg font-semibold text-white">-</dd>
+                </div>
+                <div>
+                  <dt class="text-slate-400">Rasio Produksi/Konsumsi</dt>
+                  <dd id="diagRatio" class="text-lg font-semibold text-white">-</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/20">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-slate-300">Kecepatan Dinamis</p>
+                <h4 class="text-lg font-semibold text-white">Laju Produksi vs Konsumsi</h4>
+              </div>
+              <span class="text-xs uppercase tracking-wide text-slate-400">Chart.js 4 + Tailwind 3.4</span>
+            </div>
+            <div class="mt-4 h-[320px]">
+              <canvas id="chartLaju"></canvas>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const num = value =>
+        Number(value ?? 0).toLocaleString('id-ID', { maximumFractionDigits: 0 });
+      const numFloat = value =>
+        Number(value ?? 0).toLocaleString('id-ID', { maximumFractionDigits: 2 });
+
+      const setText = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+      };
+
+      const endpoint = '{{ url_for("static", filename="data_simulasi_beras.json") }}';
+
+      const runVisualization = async () => {
+        const loader = document.getElementById('loaderState');
+        const status = document.getElementById('statStatus');
+        try {
+          const res = await fetch(endpoint, { cache: 'no-store' });
+          if (!res.ok) throw new Error('Gagal memuat data simulasi');
+          const data = await res.json();
+
+          loader.classList.add('hidden');
+          status.textContent = 'Data sinkron';
+
+          const labels = data.tahun.map(t => t.toFixed(2));
+          const startYear = Math.floor(data.tahun[0]);
+          const endYear = Math.floor(data.tahun[data.tahun.length - 1]);
+          setText('statRange', `${startYear} – ${endYear}`);
+
+          const stokAwal = data.stok_beras[0] ?? 0;
+          const stokAkhir = data.stok_beras[data.stok_beras.length - 1] ?? 0;
+          const deltaStok = stokAkhir - stokAwal;
+          const avgProduksi =
+            data.laju_produksi.reduce((a, b) => a + b, 0) / data.laju_produksi.length;
+          const avgKonsumsi =
+            data.laju_konsumsi.reduce((a, b) => a + b, 0) / data.laju_konsumsi.length;
+          const selisihRata = avgProduksi - avgKonsumsi;
+          const ratio = avgProduksi && avgKonsumsi ? avgProduksi / avgKonsumsi : 0;
+
+          setText('statStok', `${num(stokAkhir)} ton`);
+          setText('statSelisih', `${selisihRata >= 0 ? '+' : ''}${numFloat(selisihRata)} ton`);
+          setText('statLabelSelisih', selisihRata >= 0 ? 'Produksi surplus' : 'Konsumsi dominan');
+          setText(
+            'statTrend',
+            `${deltaStok >= 0 ? 'Naik' : 'Turun'} ${num(Math.abs(deltaStok))} ton sejak awal`
+          );
+          setText(
+            'digest',
+            `Rata-rata produksi ${numFloat(avgProduksi)} ton dan konsumsi ${numFloat(
+              avgKonsumsi
+            )} ton per interval simulasi.`
+          );
+          setText('diagDelta', `${deltaStok >= 0 ? '+' : '-'}${num(Math.abs(deltaStok))} ton`);
+          setText('diagProd', `${numFloat(avgProduksi)} ton`);
+          setText('diagKons', `${numFloat(avgKonsumsi)} ton`);
+          setText('diagRatio', `${numFloat(ratio)}×`);
+
+          const gradientStok = ctx => {
+            const gradient = ctx.createLinearGradient(0, 0, 0, 320);
+            gradient.addColorStop(0, 'rgba(16, 185, 129, 0.35)');
+            gradient.addColorStop(1, 'rgba(15, 23, 42, 0)');
+            return gradient;
+          };
+
+          const commonGrid = {
+            color: 'rgba(255,255,255,0.08)',
+            drawBorder: false
+          };
+
+          const chartStokCtx = document.getElementById('chartStok').getContext('2d');
+          new Chart(chartStokCtx, {
+            type: 'line',
+            data: {
+              labels,
+              datasets: [
+                {
+                  label: 'Stok Beras (ton)',
+                  data: data.stok_beras,
+                  borderColor: '#34d399',
+                  backgroundColor: gradientStok(chartStokCtx),
+                  borderWidth: 2.5,
+                  fill: true,
+                  tension: 0.35,
+                  pointRadius: 0
+                }
+              ]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                tooltip: {
+                  backgroundColor: '#0f172a',
+                  borderColor: '#34d399',
+                  borderWidth: 1,
+                  callbacks: {
+                    label: ctx => `${ctx.dataset.label}: ${numFloat(ctx.parsed.y)} ton`
+                  }
+                }
+              },
+              scales: {
+                x: { grid: commonGrid, ticks: { color: '#cbd5f5', maxTicksLimit: 6 } },
+                y: {
+                  grid: commonGrid,
+                  ticks: { color: '#cbd5f5', callback: v => `${v / 1000}k` }
+                }
+              }
+            }
+          });
+
+          const chartLajuCtx = document.getElementById('chartLaju').getContext('2d');
+          new Chart(chartLajuCtx, {
+            type: 'line',
+            data: {
+              labels,
+              datasets: [
+                {
+                  label: 'Laju Produksi',
+                  data: data.laju_produksi,
+                  borderColor: '#fb923c',
+                  borderWidth: 2.8,
+                  borderDash: [4, 4],
+                  tension: 0.35,
+                  pointRadius: 0
+                },
+                {
+                  label: 'Laju Konsumsi',
+                  data: data.laju_konsumsi,
+                  borderColor: '#f87171',
+                  borderWidth: 2.8,
+                  tension: 0.35,
+                  pointRadius: 0
+                }
+              ]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: {
+                  position: 'top',
+                  labels: { color: '#e2e8f0', usePointStyle: true, pointStyle: 'line' }
+                },
+                tooltip: {
+                  backgroundColor: '#0f172a',
+                  callbacks: {
+                    label: ctx => `${ctx.dataset.label}: ${numFloat(ctx.parsed.y)} ton`
+                  }
+                }
+              },
+              interaction: { intersect: false, mode: 'index' },
+              scales: {
+                x: { grid: commonGrid, ticks: { color: '#cbd5f5', maxTicksLimit: 6 } },
+                y: {
+                  grid: commonGrid,
+                  ticks: { color: '#cbd5f5', callback: v => `${numFloat(v)}` }
+                }
+              }
+            }
+          });
+        } catch (error) {
+          console.error(error);
+          setText('statStatus', 'Gagal memuat data');
+          loader.innerHTML = '❌ Terjadi kesalahan';
+          document.body.innerHTML += `<div class="mx-auto mt-6 max-w-3xl rounded-2xl border border-red-500/30 bg-red-500/10 p-4 text-red-100">${error.message}</div>`;
+        }
+      };
+
+      document.getElementById('btnRefresh').addEventListener('click', () => {
+        const loader = document.getElementById('loaderState');
+        loader.classList.remove('hidden');
+        loader.innerHTML =
+          '<span class="h-2 w-2 animate-ping rounded-full bg-emerald-300"></span><span>Sinkronisasi data...</span>';
+        runVisualization();
+      });
+
+      runVisualization();
+    </script>
+  </body>
+</html>
